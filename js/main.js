@@ -73,4 +73,28 @@ $(document).ready(function() {
     });
 
 
+    /* ======= Control Modal sizes ======= */ 
+
+    function resizeIFrameToFitContent( iFrames ) {
+
+    var iframes = document.querySelectorAll(iFrames);
+
+    for( var i = 0; i < iframes.length; i++) {
+        var iwidth = iframes[i].parentElement.offsetWidth - 20
+        iframes[i].width = iwidth
+        iframes[i].height = iwidth > 800 ? iwidth*0.5 : 400
+    }
+}
+
+    window.addEventListener('resize', function(e) {
+        resizeIFrameToFitContent( ".modaliFrame" )
+    } );
+
+    $(document).ready(function(){
+        $('#portfolio-1').on('shown.bs.modal', function () {
+          resizeIFrameToFitContent( ".modaliFrame" )
+        })
+    })
+
+
 });
