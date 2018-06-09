@@ -66,7 +66,6 @@ var map_asia = new Datamap({
 	scope: 'world',
 	aspectRatio: 1,
 	responsive: true,
-	//Zoom in on Africa
 	setProjection: function(element) {
 	var projection = d3.geo.mercator()
 	  .center([109, 35])
@@ -128,6 +127,8 @@ map_asia.bubbles([
 
 var colors = d3.scale.category10();
 var currentOpacity = 1 
+
+d3.selectAll('.bubbles').selectAll('circle').attr("r",5)
 
 window.setInterval(function() {
 

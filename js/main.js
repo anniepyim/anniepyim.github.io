@@ -94,6 +94,9 @@ $(document).ready(function() {
         $('#portfolio-1').on('shown.bs.modal', function () {
           resizeIFrameToFitContent( ".modaliFrame" )
         })
+        $('#portfolio-2').on('shown.bs.modal', function () {
+          resizeIFrameToFitContent( ".modaliFrame" )
+        })
     })
 
 
