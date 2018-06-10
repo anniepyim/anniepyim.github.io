@@ -439,6 +439,10 @@ table td {
    text-align: left;
 }
 
+.skills-section .row{
+  padding: 0px 40px;
+}
+
 .skills-section .title {
   font-size: 22px;
   color: #3F51B5;
@@ -535,6 +539,10 @@ table td {
   margin-bottom: 15px;
 }
 
+.courses-section .row {
+  padding-left: 60px
+}
+
 .courses-section .item {
   margin-bottom: 20px;
 }
@@ -575,6 +583,10 @@ table td {
   margin-left:0px;
   padding-left: 20px;
   margin-bottom: 5px;
+}
+
+.pub-section .row{
+  padding: 0px 40px;
 }
 
 .pub-section .item {
@@ -715,11 +727,20 @@ table td {
   text-align: center
 }
 
-.interest-section{
+/*.interest-section{
   padding: 0px 60px;
+}*/
+
+.interests-section .row{
+    padding:0px 30px;
+  }
+
+.interest-title{
+  padding: 80px 30px;
 }
-.carousel-caption{
-  text-shadow: 2px 2px #818181;
+
+.interest-picture{
+  padding: 20px 50px;
 }
 
 .item-interest{
@@ -785,6 +806,28 @@ table td {
 .footer .container a {
   color: #8a8a8a;
 }
+
+@media(min-width: 767px){
+  .carousel-caption{
+    position:absolute;
+    text-shadow: 2px 2px #818181;
+  }
+}
+
+@media (max-width: 1024px) {
+  .interests-section .row{
+    padding:0px 0px;
+  }
+
+  .interest-title{
+    padding: 50px 10px;
+  }
+
+  .interest-picture{
+    padding: 0px 10px;
+  }
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header .social {
@@ -839,8 +882,20 @@ table td {
     position: static;
     margin-bottom: 15px;
   }
+
+  .skills-section .row{
+    padding: 0px 0px;
+  }
   .education-section .item {
     padding: 0;
+  }
+
+  .courses-section .row {
+    padding-left: 0px
+  }
+
+  .pub-section .row{
+    padding: 0px 0px;
   }
   .portfolio-section .filters .type {
     font-size: 12px;
@@ -868,6 +923,19 @@ table td {
     position: static;
     font-size: 12px;
   }
+
+  .interest-title{
+    padding: 0px 0px;
+  }
+
+  .interest-picture{
+    padding: 20px 0px;
+  }
+
+  .carousel-caption{
+    background: #3f51b5
+  }
+
   .contact-section .intro {
     padding: 0;
     text-align: center;
